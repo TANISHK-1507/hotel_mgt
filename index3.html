@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image3/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets3/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+  <div class="container hide">
+    <div class="card-wrapper">
+      <div class="star">
+        <img src="./images3/icon-star.svg" alt="star" class="star-icon">
+      </div>
+      <h2>How did we do?</h2>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+        offering!</p>
+      <div class="star-rating">
+        <input type="button" class="btn btn-choice" value="1" />
+        <input type="button" class="btn btn-choice" value="2" />
+        <input type="button" class="btn btn-choice" value="3" />
+        <input type="button" class="btn btn-choice" value="4" />
+        <input type="button" class="btn btn-choice" value="5" />
+      </div>
+      <button class="btn-submit" id="submit">Submit</button>
+    </div>
+  </div>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div class="container hide-thank">
+    <div class="card-wrapper">
+      <div class="close-btn">
+        <span></span>
+        <span></span>
+      </div>
+      <img src="./images3/illustration-thank-you.svg" alt="thank you" class="thankyou-icon">
+      <div class="rating-selected">
+        <h2 class="selected-rating">You selected <span id="rating"></span> out of 5</h2>
+      </div>
+      <h3>Thank you!</h3>
+      <p class="text-thankyou">We appreciate you taking the time to give a rating. If you ever need more support, dont
+        hesitate to get in touch!</p>
+    </div>
+  </div>
+  <!-- Thank you state end -->
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/beinawair">Beinawair</a>.
+  </div>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
